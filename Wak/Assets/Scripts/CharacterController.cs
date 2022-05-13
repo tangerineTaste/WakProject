@@ -46,6 +46,15 @@ public class CharacterController : MonoBehaviour
             if(Input.GetKey(KeyCode.UpArrow)){
                 Jump();
             }
+            if(Input.GetKey(KeyCode.Z)){
+                AttackWith1();
+            }
+            else if(Input.GetKey(KeyCode.X)){
+                AttackWith2();
+            }
+            else if(Input.GetKey(KeyCode.C)){
+                AttackWith3();
+            }
         }
     }
     void MoveLeft(){
@@ -56,7 +65,7 @@ public class CharacterController : MonoBehaviour
         transform.position += new Vector3(speed * -1 * Time.deltaTime, 0, 0);
     }
     void MoveRight(){
-        if(!isFacingLeft){
+        if(isFacingLeft){
             transform.rotation = Quaternion.Euler(0,180,0);
             isFacingLeft = false;
         }
@@ -73,5 +82,21 @@ public class CharacterController : MonoBehaviour
     IEnumerator Jumping(){
         yield return new WaitForSeconds(1f);
         isJumping = false;
+    }
+
+    public void AttackWith1(){
+        attackController.isAttacking = true;
+        attackController.attackLevel =1;
+        Attack1?.Invoke();
+    }
+    public void AttackWith2(){
+        attackController.isAttacking = true;
+        attackController.attackLevel =2;
+        Attack2?.Invoke();
+    }
+    public void AttackWith3(){
+        attackController.isAttacking = true;
+        attackController.attackLevel =3;
+        Attack3?.Invoke();
     }
 }
