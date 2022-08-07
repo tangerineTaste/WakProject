@@ -349,6 +349,14 @@
 "Assets/Scripts/AttackController.cs"
 "Assets/Scripts/CharacterController.cs"
 "Assets/Scripts/DonkeyKongController.cs"
+"Assets/Scripts/GameState.cs"
+"Assets/Scripts/IndiactorCharactor.cs"
+"Assets/Scripts/IndicatorContorller.cs"
+"Assets/Scripts/LoadingScreenController.cs"
+"Assets/Scripts/MainMenu.cs"
+"Assets/Scripts/MarioCharactorController.cs"
+"Assets/Scripts/ProjectileController.cs"
+"Assets/Scripts/StartScreenController.cs"
 -langversion:9.0
 
 /deterministic

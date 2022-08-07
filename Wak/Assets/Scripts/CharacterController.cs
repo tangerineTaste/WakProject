@@ -24,6 +24,7 @@ public class CharacterController : MonoBehaviour
 
     private bool isJumping = false;
 
+    public Action Move;
     public Action Attack1;
     public Action Attack2;
     public Action Attack3;
@@ -55,6 +56,7 @@ public class CharacterController : MonoBehaviour
             else if(Input.GetKey(KeyCode.C)){
                 AttackWith3();
             }
+        
         }
     }
     void MoveLeft(){
@@ -63,6 +65,7 @@ public class CharacterController : MonoBehaviour
             isFacingLeft = true;
         }
         transform.position += new Vector3(speed * -1 * Time.deltaTime, 0, 0);
+        Move?.Invoke();
     }
     void MoveRight(){
         if(isFacingLeft){
@@ -70,6 +73,7 @@ public class CharacterController : MonoBehaviour
             isFacingLeft = false;
         }
         transform.position += new Vector3(speed  * Time.deltaTime, 0, 0);
+        Move?.Invoke();
     }
     public void Jump(){
         if(!isJumping){
