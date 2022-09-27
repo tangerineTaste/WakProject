@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Controls.unity
     guid: 11c87cdcec38e9f4c80c97af40657b2d
+  - enabled: 1
+    path: Assets/Scenes/BattleField.unity
+    guid: 5a602528a72101b41aa199fe30783471
+  - enabled: 1
+    path: Assets/Scenes/BrowserCastle.unity
+    guid: e022be1a3b868f742b677be2dbf0a728
+  - enabled: 1
+    path: Assets/Scenes/SelectStage.unity
+    guid: 365c9d172b6cfe54cbdd557acf5faa26
   m_configObjects: {}

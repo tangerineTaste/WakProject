@@ -22,10 +22,12 @@ public class IndicatorOverCharacter : MonoBehaviour
             case "Mario":
                 InputCharacter(GameState.Character.Mario);
                 PlayerImage.sprite = marioSprite;
+                PlayerImage.color = new Color(255,255,255,255);
                 break;
             case "DonkeyKong":
                 InputCharacter(GameState.Character.DonkeyKong);
                 PlayerImage.sprite = donkeyKongSprite;
+                PlayerImage.color = new Color(255,255,255,255);
                 break;
         }
     }

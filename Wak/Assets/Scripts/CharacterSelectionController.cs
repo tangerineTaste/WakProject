@@ -80,7 +80,6 @@ public class CharacterSelectionController : MonoBehaviour
     [SerializeField]
     Button startGameButton;
 
-    GameState.Character tempCharacter;
 
     LoadingScreenController loadingScreen;
 
@@ -106,9 +105,6 @@ public class CharacterSelectionController : MonoBehaviour
         p3IndicatorController.IndicatorWarClicked += HandleUserClickedIndicatorP3;
         p4IndicatorController.IndicatorWarClicked += HandleUserClickedIndicatorP4;
 
-        foreach(CharacterImage characterImage in characterImagesList){
-            //characterImage.IndicatorOverCharacter += HandleIndicatorOverCharacter;
-        }
     }
 
     void OnDisable()
@@ -117,9 +113,6 @@ public class CharacterSelectionController : MonoBehaviour
         p2IndicatorController.IndicatorWarClicked -= HandleUserClickedIndicatorP2;
         p3IndicatorController.IndicatorWarClicked -= HandleUserClickedIndicatorP3;
         p4IndicatorController.IndicatorWarClicked -= HandleUserClickedIndicatorP4;
-        foreach(CharacterImage characterImage in characterImagesList){
-            //characterImage.IndicatorOverCharacter -= HandleIndicatorOverCharacter;
-        }
     }
 
 
@@ -205,29 +198,6 @@ public class CharacterSelectionController : MonoBehaviour
         }
     }
 
-    /*void HandleIndicatorOverCharacter(string name){
-        switch(name){
-            case "Mario":
-                tempCharacter = GameState.Character.Mario;
-                break;
-            case "DonkeyKong":
-                tempCharacter = GameState.Character.DonkeyKong;
-                break;
-        }
-        if(isGrabbingP1Indicator){
-            GameState.P1_Character = tempCharacter;
-        }
-        else if(isGrabbingP2Indicator){
-            GameState.P2_Character = tempCharacter;
-        }
-        else if(isGrabbingP3Indicator){
-            GameState.P3_Character = tempCharacter;
-        }
-        else if(isGrabbingP4Indicator){
-            GameState.P4_Character = tempCharacter;
-        }
-        Debug.Log("충돌확인");
-    }*/
 
     void HandleStartButtonClicked(){
         if(loadingScreen != null){
