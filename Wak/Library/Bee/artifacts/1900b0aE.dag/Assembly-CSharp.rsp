@@ -358,6 +358,7 @@
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MarioCharactorController.cs"
 "Assets/Scripts/ProjectileController.cs"
+"Assets/Scripts/SettingsController.cs"
 "Assets/Scripts/StageController.cs"
 "Assets/Scripts/StageSelection.cs"
 "Assets/Scripts/StartScreenController.cs"

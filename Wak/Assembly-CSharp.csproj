@@ -37,10 +37,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\LoadingScreenController.cs" />
+     <Compile Include="Assets\Scripts\StageSelection.cs" />
      <Compile Include="Assets\Scripts\CharacterImage.cs" />
      <Compile Include="Assets\Scripts\ProjectileController.cs" />
      <Compile Include="Assets\Scripts\CharacterSelectionController.cs" />
      <Compile Include="Assets\Scripts\DonkeyKongController.cs" />
+     <Compile Include="Assets\Scripts\StageController.cs" />
      <Compile Include="Assets\Scripts\GameState.cs" />
      <Compile Include="Assets\Scripts\StartScreenController.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
@@ -49,8 +51,7 @@
      <Compile Include="Assets\Scripts\AttackController.cs" />
      <Compile Include="Assets\Scripts\CharacterController.cs" />
      <Compile Include="Assets\Scripts\MarioCharactorController.cs" />
-     <Compile Include="Assets\Scripts\StageController.cs" />
-     <Compile Include="Assets\Scripts\StageSelection.cs" />
+     <Compile Include="Assets\Scripts\SettingsController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
